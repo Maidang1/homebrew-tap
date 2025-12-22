@@ -1,22 +1,22 @@
 class ReminderCli < Formula
   desc "A CLI reminder tool with cron support and system notifications"
   homepage "https://github.com/Maidang1/reminder-cli"
-  version "0.4.0"
+  version "0.5.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Maidang1/reminder-cli/releases/download/v0.4.0/reminder-cli-aarch64-apple-darwin.tar.gz"
-      sha256 "4424cf96f15143c8b5edd36ab32e515362b1cbc6c9a93a0649da5e6cd487b2f7"
+      url "https://github.com/Maidang1/reminder-cli/releases/download/v0.5.0/reminder-cli-aarch64-apple-darwin.tar.gz"
+      sha256 "5573b97ef43ffcbb964e39310e8afaffff60239103c2d28911090170c34f7690"
     else
-      url "https://github.com/Maidang1/reminder-cli/releases/download/v0.4.0/reminder-cli-x86_64-apple-darwin.tar.gz"
-      sha256 "83af58ea725378501b15ea575738e595773bfef88e36f4a02ea1c9c89d3f7c68"
+      url "https://github.com/Maidang1/reminder-cli/releases/download/v0.5.0/reminder-cli-x86_64-apple-darwin.tar.gz"
+      sha256 "0e4ee7b40eb8ad13cb143f06a198aee9c19cc30b1132b1d2f4d0fdb72d3cb1d7"
     end
   end
 
   on_linux do
-    url "https://github.com/Maidang1/reminder-cli/releases/download/v0.4.0/reminder-cli-x86_64-unknown-linux-gnu.tar.gz"
-    sha256 "73d52469a9be35a29a3b04278b85929aa186722c75300d0a4077024a6c247261"
+    url "https://github.com/Maidang1/reminder-cli/releases/download/v0.5.0/reminder-cli-x86_64-unknown-linux-gnu.tar.gz"
+    sha256 "f921ba7f880271963439ba5d837074a83d20e24e42079b3027caee9c09f3dd64"
   end
 
   def install
